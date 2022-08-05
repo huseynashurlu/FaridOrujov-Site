@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+
+#Header{
+    overflow: auto;
+    padding: 20px 4rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header-all .left{
+    float: left;
+}
+
+.header-all .left a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.header-all .right{
+    float: right;
+    margin-top: 5px;
+}
+
+
+.header-all .right a{
+    font-size: 18px;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#First{
+    text-align: center;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+#First .overlay{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+}
+
+#First h1{
+    font-size: 56px;
+    color: #fff;
+}
+
+#First p{
+    font-size: 19px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#First a{
+    background-color: #f4623a;
+    color: #fff;
+    padding: 20px 36px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+#First hr{
+    width: 5%;
+    background-color: #f4623a;
+    border: 1px solid #f4623a;
+    margin: 20px auto;
+}
+
+#Second{
+    text-align: center;
+    background-color: #f4623a;
+    padding: 5rem 0;
+}
+
+#Second h2{
+    font-size: 2rem;
+    color: #fff;
+}
+
+#Second p{
+    font-size: 18px;
+    color: #fff;
+    opacity: .7;
+    margin-bottom: 40px;
+}
+
+#Second hr{
+    width: 5%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    margin: 20px auto;
+}
+
+#Second a{
+    background-color: #fff;
+    color: #000;
+    padding: 20px 36px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+#Service{
+    padding: 5rem 0;
+    overflow: auto;
+}
+
+#Service .top{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#Service .top h2{
+    font-size: 2rem;
+    color: #212529;
+}
+
+
+#Service hr{
+    width: 5%;
+    background-color: #f4623a;
+    border: 1px solid #f4623a;
+    margin: 20px auto;
+}
+
+#Service .box{
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#Service .box i{
+    color: #f4623a;
+    font-size: 40px;
+}
+
+#Service .box h3{
+    font-size: 24px;
+    color: #212529;
+    margin: 10px 0;
+}
+
+#Service .box p{
+    color: #6c757d;
+    font-size: 18px;
+}
+
+#Gallery{
+    overflow: auto;
+}
+
+#Gallery .box{
+    width: calc(100%/3);
+    float: left;
+    position: relative;
+}
+
+
+#Gallery .overlay {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    background-color: #f4623a;
+    transition: .5s;
+    opacity: 0.6;
+}
+
+#Gallery .box:hover .overlay{
+    height: 100%;
+}
+
+#Gallery .box img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.box-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 2222222222222;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+#Gallery .box:hover .box-text {
+    opacity: 1;
+}
+
+#Free{
+    text-align: center;
+    padding: 5rem 0;
+    background-color: #212529;
+}
+
+#Free h1{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+#Free a{
+    background-color: #fff;
+    color: #000;
+    padding: 20px 36px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #fcfcfc;
+}
